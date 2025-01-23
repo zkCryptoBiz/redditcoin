@@ -398,13 +398,13 @@
                       
                             const typingIndicator = document.createElement('div');
                             typingIndicator.className = 'bot-message';
-                            typingIndicator.innerHTML = `<div class="bot-avatar"></div> <span> SNAPAI is typing...</span>`;
+                            typingIndicator.innerHTML = `<div class="bot-avatar"></div> <span> REDDIT AI is typing...</span>`;
                             chatHistory.push(typingIndicator.outerHTML);
                             updateChatHistory();
                       
                             // Блокируем кнопку отправки
                             sendButton.disabled = true;
-                            const backendUrl = 'https://wool-back.onrender.com/chat';
+                            const backendUrl = 'https://ai-back-3vc9.onrender.com/chat';
                             // const backendUrl = 'http://localhost:4000/chat';
                             const fetchPromise = fetch(backendUrl, {
                               method: 'POST',
